@@ -13,17 +13,337 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
-        }
+                        orange: "#FA804C",
+                        darkish: "#363958",
+                        buttonbg: "#3D4FF3",
+                        shoebg: "#F1F1F1",
+                    },
+                },
+            },
+        };
     </script>
     <title>Nike by Tailwind</title>
 </head>
 
 <body>
-    <h1>Hey I am rafid </h1>
+    <header class="w-full mb-36">
+        <!-- navigation part starts -->
+        <nav class=" w-4/5 flex  h-20 items-center mx-auto justify-between">
+            <img class="w-72" src="./icons/Logo.png" alt="">
+            <ul class="md:flex hidden md:block gap-x-7 font-bold">
+                <li>Home</li>
+                <li>Product</li>
+                <li>Contact Us</li>
+                <li>About Us</li>
+            </ul>
+        </nav>
+        <!-- banner part starts -->
+        <section class="banner w-full md:flex justify-evenly ">
+            <div class="banner-image w-full md:w-2/5">
+                <img src="./images/Group 33092.png" alt="">
+            </div>
+            <div class="banner-text w-full md:w-5/12 text-center md:text-left ">
+                <h1 class="md:text-7xl text-5xl  uppercase font-bold"><span class="text-orange my-7 inline-block">Nike
+                        react </span>
+                    <br>
+                    <span class="text-darkish">Infinte Run 2</span>
+                </h1>
+                <p class="my-7 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad debitis
+                    voluptatum laborum.
+                    Aliquam
+                    incidunt unde sed dolore delectus quas dicta?</p>
+                <button
+                    class="border-2 h-16 hover:bg-white hover:text-black border-solid border-blue-800 bg-buttonbg text-white font-semibold rounded-lg px-7 py-3  items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                    </svg>
+                    BUY
+                    NOW</button>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- casual shoe section starts here -->
+        <section>
+            <h1
+                class="uppercase font-bold text-buttonbg  text-3xl md:text-4xl lg:text-5xl text-center md:text-left my-10">
+                Casual Shoe
+            </h1>
+            <section class="casual-shoe grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-7">
+
+                <div class="shoe border-4 border-white rounded-xl bg-white drop-shadow-2xl">
+                    <div class="px-4 pt-3 flex flex-col gap-y-4">
+                        <div class=" rounded-lg flex justify-center bg-shoebg"> <img class="w-9/12 "
+                                src="./images/image 5.png" alt="">
+                        </div>
+                        <div class="flex flex-col gap-y-4">
+                            <div>
+                                <h1 class="font-bold text-3xl">Nike Shoe </h1>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quod officiis
+                                    autem
+                                    deserunt
+                                    aperiam
+                                    quo
+                                    ab quis maiores, enim minima praesentium, nulla provident eaque quas, architecto
+                                    ducimus
+                                    non
+                                    consequatur.
+                                    Veritatis.</p>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-orange font-bold text-3xl">$420</span>
+                                <button
+                                    class="border-2 h-16 hover:bg-white hover:text-black border-solid border-blue-800 bg-buttonbg text-white font-semibold rounded-lg px-7 py-3  items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                                    </svg>
+                                    BUY
+                                    NOW</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shoe border-4 border-white rounded-xl  bg-white drop-shadow-2xl ">
+                    <div class="px-4 pt-3 flex flex-col gap-y-4">
+                        <div class=" rounded-lg flex justify-center bg-shoebg"> <img class="w-9/12 "
+                                src="./images/Daco_1703273 1.png" alt="">
+                        </div>
+                        <div class="flex flex-col gap-y-4">
+                            <div>
+                                <h1 class="font-bold text-3xl">Nike Shoe </h1>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quod officiis
+                                    autem
+                                    deserunt
+                                    aperiam
+                                    quo
+                                    ab quis maiores, enim minima praesentium, nulla provident eaque quas, architecto
+                                    ducimus
+                                    non
+                                    consequatur.
+                                    Veritatis.</p>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-orange font-bold text-3xl">$420</span>
+                                <button
+                                    class="border-2 h-16 hover:bg-white hover:text-black border-solid border-blue-800 bg-buttonbg text-white font-semibold rounded-lg px-7 py-3  items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                                    </svg>
+                                    BUY
+                                    NOW</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shoe border-4 border-white rounded-xl  bg-white drop-shadow-2xl ">
+                    <div class="px-4 pt-3 flex flex-col gap-y-4">
+                        <div class=" rounded-lg flex justify-center bg-shoebg"> <img class="w-9/12 "
+                                src="./images/pngegg 1.png" alt="">
+                        </div>
+                        <div class="flex flex-col gap-y-4">
+                            <div>
+                                <h1 class="font-bold text-3xl">Nike Shoe </h1>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quod officiis
+                                    autem
+                                    deserunt
+                                    aperiam
+                                    quo
+                                    ab quis maiores, enim minima praesentium, nulla provident eaque quas, architecto
+                                    ducimus
+                                    non
+                                    consequatur.
+                                    Veritatis.</p>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-orange font-bold text-3xl">$420</span>
+                                <button
+                                    class="border-2 h-16 hover:bg-white hover:text-black border-solid border-blue-800 bg-buttonbg text-white font-semibold rounded-lg px-7 py-3  items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                                    </svg>
+                                    BUY
+                                    NOW</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+        </section>
+
+        <section class="my-10">
+            <h1
+                class="uppercase text-center text-buttonbg md:text-left font-bold text-3xl md:text-4xl lg:text-5xl my-10">
+                Formal Shoe
+            </h1>
+            <section class="casual-shoe grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-7">
+                <div class="shoe border-4 border-white rounded-xl bg-white drop-shadow-2xl">
+                    <div class="px-4 pt-3 flex flex-col gap-y-4">
+                        <div class=" rounded-lg flex justify-center "> <img class="w-9/12 "
+                                src="./images/Mask Group.png" alt="">
+                        </div>
+                        <div class="flex flex-col gap-y-4">
+                            <div>
+                                <h1 class="font-bold text-3xl">Prestige High-Cut Leather </h1>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quod officiis
+                                    autem
+                                    deserunt
+                                    aperiam
+                                    quo
+                                    ab quis maiores, enim minima praesentium, nulla provident eaque quas, architecto
+                                    ducimus
+                                    non
+                                    consequatur.
+                                    Veritatis.</p>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-orange font-bold text-3xl">$420</span>
+                                <button
+                                    class="border-2 h-16 hover:bg-white hover:text-black border-solid border-blue-800 bg-buttonbg text-white font-semibold rounded-lg px-7 py-3  items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                                    </svg>
+                                    BUY
+                                    NOW</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shoe border-4 border-white rounded-xl bg-white drop-shadow-2xl">
+                    <div class="px-4 pt-3 flex flex-col gap-y-4">
+                        <div class=" rounded-lg flex justify-center "> <img class="w-9/12 "
+                                src="./images/Rectangle 38.png" alt="">
+                        </div>
+                        <div class="flex flex-col gap-y-4">
+                            <div>
+                                <h1 class="font-bold text-3xl">Slip-On Formal Shoe </h1>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quod officiis
+                                    autem
+                                    deserunt
+                                    aperiam
+                                    quo
+                                    ab quis maiores, enim minima praesentium, nulla provident eaque quas, architecto
+                                    ducimus
+                                    non
+                                    consequatur.
+                                    Veritatis.</p>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-orange font-bold text-3xl">$420</span>
+                                <button
+                                    class="border-2 h-16 hover:bg-white hover:text-black border-solid border-blue-800 bg-buttonbg text-white font-semibold rounded-lg px-7 py-3  items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                                    </svg>
+                                    BUY
+                                    NOW</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shoe border-4 border-white rounded-xl bg-white drop-shadow-2xl">
+                    <div class="px-4 pt-3 flex flex-col gap-y-4">
+                        <div class=" rounded-lg flex justify-center "> <img class="w-9/12 "
+                                src="./images/Rectangle 39.png" alt="">
+                        </div>
+                        <div class="flex flex-col gap-y-4">
+                            <div>
+                                <h1 class="font-bold text-3xl">Slip-On Formal Shoe </h1>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quod officiis
+                                    autem
+                                    deserunt
+                                    aperiam
+                                    quo
+                                    ab quis maiores, enim minima praesentium, nulla provident eaque quas, architecto
+                                    ducimus
+                                    non
+                                    consequatur.
+                                    Veritatis.</p>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-orange font-bold text-3xl">$420</span>
+                                <button
+                                    class="border-2 h-16 hover:bg-white hover:text-black border-solid border-blue-800 bg-buttonbg text-white font-semibold rounded-lg px-7 py-3  items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                                    </svg>
+                                    BUY
+                                    NOW</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+        <section class="last-part grid lg:grid-cols-2 grid-cols-1   gap-x-7 gap-y-8">
+            <div class=" border rounded-2xl shadow-2xl flex w-3/4  ">
+                <div>
+                    <img class="w-1/2" src="./icons/image 12.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold">Find the Perfect Fit</h1>
+                    <p>Everybody is different, which is why we
+                        offer styles for every body.</p>
+                </div>
+            </div>
+            <div class=" md:row-span-3 last  w-10/12 h-auto"><img src="./icons/XMLID 1.png" alt="" class="w-full"></div>
+            <div class=" border rounded-2xl shadow-2xl flex w-3/4">
+                <div>
+                    <img class="w-1/2" src="./icons/image 13.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold">Free Exchanges</h1>
+                    <p>One of the many reasons you can shop
+                        with peace of mind.</p>
+                </div>
+            </div>
+            <div class=" border rounded-2xl shadow-2xl flex w-3/4">
+                <div>
+                    <img class="w-1/2" src="./icons/image 14.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold">Contact Our Seller</h1>
+                    <p> They are here to help you. That's quite
+                        literally what we pay them for.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 
